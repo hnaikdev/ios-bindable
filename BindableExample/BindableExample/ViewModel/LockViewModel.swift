@@ -1,5 +1,5 @@
 //
-//  ProfileViewModel.swift
+//  LockViewModel.swift
 //  BindableExample
 //
 //  Created by Hiral Naik on 1/6/26.
@@ -8,7 +8,7 @@
 import ios_bindable
 import Foundation
 
-final class LoginViewModel {
+final class LockViewModel {
 
     let username = ConcurrentLockBindable<String>("")
     let password = ConcurrentLockBindable<String>("")

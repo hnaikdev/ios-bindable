@@ -12,7 +12,7 @@ import UIKit
 
 final class LockViewController: UIViewController {
 
-    private let viewModel = LoginViewModel()
+    private let viewModel = LockViewModel()
 
     private let usernameField = UITextField()
     private let passwordField = UITextField()

@@ -11,6 +11,7 @@ class BindableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 }
 
@@ -25,7 +26,7 @@ extension BindableTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var config = cell.defaultContentConfiguration()
         if indexPath.row == 0 {
             config.text = "Bindable"
@@ -46,7 +47,8 @@ extension BindableTableViewController {
             let viewController = LockViewController()
             navigationController?.pushViewController(viewController, animated: true)
         } else {
-            
+            let viewController = QueueViewController()
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

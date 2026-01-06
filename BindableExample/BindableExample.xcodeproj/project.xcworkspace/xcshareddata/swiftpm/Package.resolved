@@ -1,0 +1,15 @@
+{
+  "originHash" : "9fadf13aef88be428377bca6fef4c9275d23949558057cdb2cf2032229b31a1b",
+  "pins" : [
+    {
+      "identity" : "ios-bindable",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:hnaikdev/ios-bindable.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "757dc4977a9a5dbcdf735ec44e6917c442e6d36f"
+      }
+    }
+  ],
+  "version" : 3
+}

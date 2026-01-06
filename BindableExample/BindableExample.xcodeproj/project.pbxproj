@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A28C1B622F0D9A3200663353 /* ios-bindable in Frameworks */ = {isa = PBXBuildFile; productRef = A28C1B612F0D9A3200663353 /* ios-bindable */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A28C1B412F0D99E400663353 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -33,7 +37,7 @@
 		A28C1B522F0D99E400663353 /* Exceptions for "BindableExample" folder in "BindableExample" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = A28C1B292F0D99E300663353 /* BindableExample */;
 		};
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28C1B622F0D9A3200663353 /* ios-bindable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = BindableExample;
 			packageProductDependencies = (
+				A28C1B612F0D9A3200663353 /* ios-bindable */,
 			);
 			productName = BindableExample;
 			productReference = A28C1B2A2F0D99E300663353 /* BindableExample.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = A28C1B212F0D99E300663353;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A28C1B602F0D9A3200663353 /* XCRemoteSwiftPackageReference "ios-bindable" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A28C1B2B2F0D99E300663353 /* Products */;
 			projectDirPath = "";
@@ -290,10 +299,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BindableExample/Info.plist;
+				INFOPLIST_FILE = BindableExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,10 +329,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BindableExample/Info.plist;
+				INFOPLIST_FILE = BindableExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A28C1B602F0D9A3200663353 /* XCRemoteSwiftPackageReference "ios-bindable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:hnaikdev/ios-bindable.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A28C1B612F0D9A3200663353 /* ios-bindable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A28C1B602F0D9A3200663353 /* XCRemoteSwiftPackageReference "ios-bindable" */;
+			productName = "ios-bindable";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A28C1B222F0D99E300663353 /* Project object */;
 }
